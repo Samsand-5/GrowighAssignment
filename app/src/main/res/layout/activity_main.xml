@@ -28,6 +28,7 @@
             app:cornerRadius="120dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             android:text="skip"
+            android:textSize="10sp"
             />
 
 
