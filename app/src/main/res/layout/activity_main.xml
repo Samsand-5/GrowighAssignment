@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="310dp"
+            android:layout_height="185dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="120dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:text="skip"
+            />
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="35dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0E6687"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text=" Our Vision"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello We Want to Change Future With Technology."
+                android:layout_marginBottom="120dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_ready"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:padding="14dp"
+                app:cornerRadius="150dp"
+                android:text="READY"
+                android:textSize="25sp"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="110dp"
+                app:iconGravity="end"
+                app:iconSize="150dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
